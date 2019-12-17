@@ -1,5 +1,5 @@
-[![NPM](https://img.shields.io/npm/v/alaexplorerjs-ecc-v4.0.1.svg)](https://www.npmjs.org/package/alaexplorerjs-ecc-v4.0.1)
-[![Build Status](https://travis-ci.org/ALAIO/alaexplorerjs-ecc-v4.0.1.svg?branch=master)](https://travis-ci.org/ALAIO/alaexplorerjs-ecc-v4.0.1)
+[![NPM](https://img.shields.io/npm/v/ala-ecc4.svg)](https://www.npmjs.org/package/ala-ecc4)
+[![Build Status](https://travis-ci.org/ALAIO/ala-ecc4.svg?branch=master)](https://travis-ci.org/ALAIO/ala-ecc4)
 
 # Elliptic curve cryptography functions (ECC)
 
@@ -8,9 +8,9 @@ Private Key, Public Key, Signature, AES, Encryption / Decryption
 # Import
 
 ```js
-import ecc from 'alaexplorerjs-ecc-v4.0.1'
+import ecc from 'ala-ecc4'
 // or
-const ecc = require('alaexplorerjs-ecc-v4.0.1')
+const ecc = require('ala-ecc4')
 ```
 
 # Common API
@@ -218,7 +218,7 @@ Type: [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 # Usage (Object API)
 
 ```js
-let {PrivateKey, PublicKey, Signature, Aes, key_utils, config} = require('alaexplorerjs-ecc-v4.0.1')
+let {PrivateKey, PublicKey, Signature, Aes, key_utils, config} = require('ala-ecc4')
 
 // Create a new random private key
 let privateWif
@@ -238,16 +238,16 @@ pubkey = PrivateKey.fromWif(privateWif).toPublic().toString()
 # Browser
 
 ```bash
-git clone https://github.com/ALADIN-Network/alaexplorerjs-ecc-v4.0.1.git
-cd alaexplorerjs-ecc-v4.0.1
+git clone https://github.com/ALADIN-Network/ala-ecc4.git
+cd ala-ecc4
 npm install
 npm run build_browser
-# builds: ./dist/alaexplorerjs-ecc-v4.0.1.js
+# builds: ./dist/ala-ecc4.js
 # Verify release hash
 ```
 
 ```html
-<script src=alaexplorerjs-ecc-v4.0.1.js></script>
+<script src=ala-ecc4.js></script>
 ```
 
 ```js
